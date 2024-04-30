@@ -1,0 +1,16 @@
+# Example of some simple Functions and their output:
+def foo(a b) a+b;
+foo(5, 10);
+
+def bar(a b) a*a + 2*a*b + b*b;
+bar(1, 2);
+bar(1, 3);
+
+def testfunc(x y) x + y*2;
+testfunc(1,2);
+
+# Simple program to print values to the terminal:
+extern printd(x);
+
+# Low-precedence operator that ignores operands:
+def binary : 1 (x y) 0;

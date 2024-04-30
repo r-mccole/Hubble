@@ -1,0 +1,1 @@
+For each script to run properly, copy and paste the file contents in its entirety directly into the Hubble interactive terminal.

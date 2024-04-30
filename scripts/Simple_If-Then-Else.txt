@@ -1,0 +1,15 @@
+# Example of some simple if-then-else statments and their output:
+if 1 then 2 else 3;
+
+def ok(x) if x < 5 then 1 else 0;
+ok(3);
+ok(4);
+ok(5);
+ok(6);
+
+# Simple Fibonacci function with if-then-else statement
+def fib(x)
+  if x < 3 then
+    1
+  else
+    fib(x-1)+fib(x-2);

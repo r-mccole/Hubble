@@ -1,0 +1,7 @@
+# Example of some simple if-then-else statments to test the LLVM intermediate representation:
+# define externs
+extern foo();
+extern bar();
+
+# Use externs in a definition with a if-then-else statement
+def baz(x) if x then foo() else bar();

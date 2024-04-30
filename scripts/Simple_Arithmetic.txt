@@ -1,0 +1,7 @@
+# Example of some simple mathematical operations:
+1+2;
+3*3;
+100+250;
+20-15;
+1000+200-50;
+12*12+6;

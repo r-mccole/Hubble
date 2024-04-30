@@ -1,0 +1,15 @@
+# Using some of the defined external functions we can use some somewhat useful for loops:  
+
+# Example 1: Define external, then create a for loop that iterate through ascii to the defined number
+extern putchard(x);
+putchard(48);
+for i = 0, i < 100, 1.0 in putchard (i + 48);
+
+# Example 2: Define function printplus which prints the plus symbol
+extern putchard(char);
+def printplus(n)
+  for i = 1, i < n, 1.0 in
+    putchard(43);  # ascii 43 = '+'
+
+# print 100 '*' characters
+printplus(100);
