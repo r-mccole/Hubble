@@ -33,7 +33,8 @@ https://github.com/llvm/llvm-project/releases
    <extracted_dir>/clang+llvm-<version>-x86_64-pc-windows-msvc/lib/cmake/llvm
    ```
 5. Open the folder using VS Code, ensure that CMake is set to Debug, select and choose the [Visual Studio Build Tools 2022 Release -amd64] kit, hit build, wait, then the launch button. 
-![image](https://github.com/r-mccole/Hubble/assets/18635735/b5772bcf-04b2-4e71-8272-3de2e9fe9b76)
+![image](https://github.com/r-mccole/Hubble/assets/18635735/7ad11c53-2c7b-4de6-9c78-7970451319ec)
+
 
 6. You should now have a build and running version of Hubble! Test out the functionality using some of the scripts included in the /scripts folder. Copy and paste them in full directly into Hubble input area. 
 
