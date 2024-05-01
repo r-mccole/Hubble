@@ -8,7 +8,7 @@ Hubble is a procedural language which operates within a self contained terminal 
 If you are just interested in testing out and running Hubble on Windows, you're in luck! Just simply download the latest precompiled executable from here: https://github.com/r-mccole/Hubble/releases/latest
 
 # Build from Source
-Running on a different operating system then windows? You will have to build this project from source, this is untested, but hopefully these steps will provide a good starting place. 
+Running on a different operating system then windows? You will have to build this project from source, using other compilers outside this guide is untested, but hopefully these steps will provide a good starting place. 
 
 ## Build Steps:
 1. Install prerequisite programs:
