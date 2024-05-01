@@ -1,5 +1,5 @@
 # Hubble
-Hubble is a procedural language which operates within a self contained terminal session. Similar to an interactive compiler much like one would find when running a Python session, or any other interpretation language that allows input to be processed, compiled, and run in real-time. Hubble started off as a fork of part of LLVM's popular 'Kaleidoscope' language, but has grown to be its own self contained project. Focused on a larger scoped area, much like the 'Hubble' telescope. This project aims to create a strong foundational base in learning how to create a language using LLVM, and building projects with CMake.
+Hubble is a procedural language which operates within a self contained terminal session. Similar to an interactive compiler much like one would find when interfacing with a Python session, or any other anguage that allows input to be processed, JIT compiled, and run in real-time. Hubble started off as a fork of part of LLVM's popular 'Kaleidoscope' language, but has grown to be its own self contained project. Focused on a larger scoped area, much like the 'Hubble' telescope. This project aims to create a strong foundational base in learning how to create a language using LLVM, and building projects with CMake.
 
 ![image](https://github.com/r-mccole/Hubble/assets/18635735/14728ece-f66d-491c-a02e-54aaf6c39725)
 
