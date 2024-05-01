@@ -53,7 +53,7 @@ https://github.com/llvm/llvm-project/releases
 	}
 	```
 
-* If you get a linker error using the MSVC like below:\
+* If you get a linker error using MSVC like below:\
   LINK : fatal error LNK1104: cannot open file 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\DIA SDK\lib\amd64\diaguids.lib' 
 
   For some reason the compiler assumes the location of diaguids.lib to be in the \Visual Studio\2019\Professional directory struture. It possible either the LLVM libraries or default MSCV libraries were compiled with the Professional Edition. In some cases the 'Community' version of Visual Studio is installed vs the 'Professional' in that case create the directory structure as it shows and place the diaguids.lib there. 
