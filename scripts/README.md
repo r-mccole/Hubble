@@ -1,1 +1,2 @@
-For each script to run properly, copy and paste the file contents in its entirety directly into the Hubble interactive terminal.
+# Running Script Code
+For each script code block to run properly, copy and paste the file contents as directed in the script comments directly into the Hubble interactive terminal.
