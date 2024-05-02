@@ -9,7 +9,6 @@ using namespace llvm;
 using namespace llvm::orc;
 using namespace std;
 
-
 //===----------------------------------------------------------------------===//
 // Top-Level parsing and JIT Driver
 //===----------------------------------------------------------------------===//
@@ -90,7 +89,7 @@ void HandleTopLevelExpression() {
       // Shows the LLVM intermediate representation (IR)
       fprintf(stderr, "Read top-level expression:");
       FnIR->print(errs());
-      fprintf(stderr, "\n");
+      //fprintf(stderr, "\n");
       
       // Create a ResourceTracker to track JIT'd memory allocated to our
       // anonymous expression -- that way we can free it after executing.
@@ -127,7 +126,7 @@ void HandleHelp()
         "<equations> \tCan input mathmatical equations using <, +, -, *\n"
         "if-then-else \tCreate if, then, else statements to path code execution\n"
         "for \t\tUse for loops to iterate over a sequence\n"
-        "ctrl+Z/D; \tUsed to exit the program gracefully and show the ModuleID\n\n"
+        "ctrl \t\tUsed to exit the program gracefully and show the ModuleID\n\n"
         "For more information on a specific command, type the above command-name\n"
         "If done type exit;\n\n");
 
@@ -171,7 +170,7 @@ void HandleHelp()
                    "repeat a fixed number of times\n");
             printf("Syntax: 'for i = 0, i < ###, 1.0 in function_name(i)'\n\n");
         }
-        else if (command == "ctrl+Z/D")
+        else if (command == "ctrl")
         {
             printf("\nQuit the program gracefully (by sending an EOF via CTRL+D on Linux or"
                    "CTRL+Z\n and ENTER on Windows), it will show the ModuleID,"
