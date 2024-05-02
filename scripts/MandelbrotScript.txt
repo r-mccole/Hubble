@@ -1,5 +1,4 @@
 # Define all the needed functions in order to get the Mandelbrot function working:
-
 # Define the Logical unary not (v).
 def unary!(v)
   if v then
