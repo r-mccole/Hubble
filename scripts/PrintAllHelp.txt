@@ -1,0 +1,9 @@
+# Simple helper script to print all help text to the terminal:
+help
+def
+extern
+<equations>
+if-then-else
+for
+ctrl
+exit

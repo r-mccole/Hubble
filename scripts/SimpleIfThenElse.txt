@@ -1,15 +1,18 @@
-# Example of some simple if-then-else statments and their output:
-if 1 then 2 else 3;
+# Example 1: of some simple if-then-else statments and their output:
+if 1 then 2 else 3; # evaluates to 2
 
-def ok(x) if x < 5 then 1 else 0;
-ok(3);
-ok(4);
-ok(5);
-ok(6);
+# Example 2: of a simple if-then-else statments with a function and their output:
+def lessthenfive(x) if x < 5 then 1 else 0;
+lessthenfive(4); # evaluates to 1
+lessthenfive(5); # evaluates to 0
+lessthenfive(6); # evaluates to 0
 
-# Simple Fibonacci function with if-then-else statement
+# Example 3:Fibonacci function with if-then-else statement and testing output:
 def fib(x)
   if x < 3 then
     1
   else
     fib(x-1)+fib(x-2);
+
+fib(4);  # evaluates to 3
+fib(10); # evaluates to 55
