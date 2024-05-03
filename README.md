@@ -19,13 +19,13 @@ Running on a different operating system then windows? You will have to build thi
     * CMake is an open source, cross-platform family of tools designed to build, test, and package software. It is the primary way that Hubble is packaged. Download and install CMake for your respective operating system:\
       https://cmake.org/download/
 
+2. Download LLVM libraries: To build this project you need to download the required dependencies of LLVM. Luckily, LLVM provides precompiled libraries with the required headers used for this project. For windows use the version described as: 'clang+llvm-<version>-x86_64-pc-windows-msvc.tar.xz' Note, this version for windows/MSVC is different, but necessary to use, then the normal LLVM-<version>-win64.exe binary. This is because it includes the required headers and llvm-config.cmake build file. For Linux: 'clang+llvm-<version>-<architecture>-linux-<optional_version>.tar.xz'. They can be downloaded from the llvm-project release page:\
+https://github.com/llvm/llvm-project/releases
+
 3. Clone the Hubble repository to a desired known directory:\
 https://github.com/r-mccole/Hubble.git \
   Or download the .zip file of the repository: \
   https://github.com/r-mccole/Hubble/archive/refs/heads/main.zip
-
-3. Download LLVM libraries: To build this project you need to download the required dependencies of LLVM. Luckily, LLVM provides precompiled libraries with the required headers used for this project. For windows use the version described as: 'clang+llvm-<version>-x86_64-pc-windows-msvc.tar.xz' Note, this version for windows/MSVC is different, but necessary to use, then the normal LLVM-<version>-win64.exe binary. This is because it includes the required headers and llvm-config.cmake build file. For Linux: 'clang+llvm-<version>-<architecture>-linux-<optional_version>.tar.xz'. They can be downloaded from the llvm-project release page:\
-https://github.com/llvm/llvm-project/releases
 
 4. Extract the files using a program that supports .tar.xz (7-zip is a good program for this). Then within the cloned /Hubble directory in the CMakeLists.txt file set the LLVM_DIR variable to the location of the 'llvm-config.cmake' typically under:
    ```
