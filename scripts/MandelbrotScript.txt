@@ -1,20 +1,20 @@
 # Define all the needed functions in order to get the Mandelbrot function working:
-# Define the Logical unary not (v).
+# 1. Define the Logical unary not (v).
 def unary!(v)
   if v then
     0
   else
     1;
 
-# Define the Unary negate (0-v).
+# 2. Define the Unary negate (0-v).
 def unary-(v)
   0-v;
 
-# Define > with the same precedence as <.
+# 3. Define > with the same precedence as <.
 def binary> 10 (LHS RHS)
   RHS < LHS;
 
-# Binary logical or as |, which does not short circuit.
+# 4. Binary logical or as |, which does not short circuit.
 def binary| 5 (LHS RHS)
   if LHS then
     1
@@ -23,24 +23,24 @@ def binary| 5 (LHS RHS)
   else
     0;
 
-# Binary logical and as '&', which does not short circuit.
+# 5. Binary logical and as '&', which does not short circuit.
 def binary& 6 (LHS RHS)
   if !LHS then
     0
   else
     !!RHS;
 
-# Define '=' with slightly lower precedence than relationals.
+# 6. Define '=' with slightly lower precedence than relationals.
 def binary = 9 (LHS RHS)
   !(LHS < RHS | LHS > RHS);
 
-# Define ':' for sequencing: as a low-precedence operator that ignores operands and just returns the RHS.
+# 7. Define ':' for sequencing: as a low-precedence operator that ignores operands and just returns the RHS.
 def binary : 1 (x y) y;
 
-# Extern the putchard function to print decimal to ascci characters:
+# 8. Extern the putchard function to print decimal to ascci characters:
 extern putchard(char);
 
-# define the if-then-else flow for these characters call it printdensity
+# 9. define the if-then-else flow for these characters call it printdensity
 def printdensity(d)
   if d > 8 then
     putchard(32)  # ' '
@@ -52,7 +52,7 @@ def printdensity(d)
     putchard(42); # '*'
 	
 	
-# Determine whether the specific location diverges, and Solve for z = z^2 + c in the complex plane.
+# 10. Determine whether the specific location diverges, and Solve for z = z^2 + c in the complex plane.
 def mandelconverger(real imag iters creal cimag)
   if iters > 255 | (real*real + imag*imag > 4) then
     iters
@@ -62,11 +62,11 @@ def mandelconverger(real imag iters creal cimag)
                     iters+1, creal, cimag);
 					
 					
-# Return the number of iterations required for the iteration to escape
+# 11. Return the number of iterations required for the iteration to escape
 def mandelconverge(real imag)
   mandelconverger(real, imag, 0, real, imag);
 
-# Compute and plot the mandelbrot set with the specified 2 dimensional range info.
+# 12. Compute and plot the mandelbrot set with the specified 2 dimensional range info.
 def mandelhelp(xmin xmax xstep   ymin ymax ystep)
   for y = ymin, y < ymax, ystep in (
     (for x = xmin, x < xmax, xstep in
@@ -74,7 +74,7 @@ def mandelhelp(xmin xmax xstep   ymin ymax ystep)
     : putchard(10)
   );
 
-# mandel - This is a convenient helper function for plotting the mandelbrot set from the specified position with the specified Magnification.
+# 13. mandel - This is a convenient helper function for plotting the mandelbrot set from the specified position with the specified Magnification.
 def mandel(realstart imagstart realmag imagmag)
   mandelhelp(realstart, realstart+realmag*78, realmag,
              imagstart, imagstart+imagmag*40, imagmag);
