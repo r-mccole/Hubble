@@ -15,7 +15,7 @@ set(SOURCES
 "src/topParser.cpp"
 ) 
 
-SET(LLVM_DIR "C:/repos/clang+llvm-18.1.4-x86_64-pc-windows-msvc/lib/cmake/llvm")
+SET(LLVM_DIR "C:/repos/clang+llvm-18.1.5-x86_64-pc-windows-msvc/lib/cmake/llvm")
 set(CMAKE_BUILD_TYPE Debug)
 
 find_package(LLVM REQUIRED CONFIG)
